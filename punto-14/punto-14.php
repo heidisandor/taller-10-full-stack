@@ -33,14 +33,14 @@ function hasNumber($pass){
 //Declarar Variables
 $password= ""; 
 
-echo "Ingrese la clave a registrar \n";
+echo "Ingrese la clave a registrar: \n";
 fscanf(STDIN, "%s", $password); 
 
 //PROCESO
 if (hasLong ($password)) {
   if (hasUpperLetter($password)){
       if (hasNumber($password)){
-          echo "¡Felicidades!Tu contraseña es segura. Ha quedado registrada.";
+          echo "¡Felicidades!Su contraseña es segura. Ha quedado registrada.";
         }else 
             echo "¡Cuidado! Su contraseña debe tener al menos un número. \n" ;
     }else {
